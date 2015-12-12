@@ -1,0 +1,29 @@
+{% extends 'page/base.html' %}
+{% block content %}
+
+<div id="events_header" class="with_bground">
+<div class="overlay">
+<div class="container">
+<div style="text-align: center;">
+<h1 class="header">Aktualności</h1>
+</div>
+</div>
+</div>
+</div>
+
+<div id="events" class="container without_bground">
+<div>
+
+{% for item in events %}
+<h2>{{ item.title }}</h2>
+<p>Opublikowano: {{ item.published_date }}</p>
+<p>{{ item.text|linebreaks }}</p>
+<br>
+<p>Autor: {{ item.author }}</p>
+{% endfor %}
+
+</div>
+</div>
+
+
+{% endblock %}

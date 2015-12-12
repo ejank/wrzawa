@@ -1,0 +1,57 @@
+
+{% load staticfiles %}
+
+<html>
+<head>
+<title>Warszawski Zjazd Wędrowników Wrzawa</title>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+
+
+<link	rel="stylesheet"	href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link	rel="stylesheet"	href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!--<link href='https://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>-->
+<link href='https://fonts.googleapis.com/css?family=Berkshire+Swash&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<link	rel="stylesheet" type="text/css" href="{% static 'css/page.css' %}">
+
+</head>
+
+<body>
+<div class="navbar navbar-default" role="navigation">
+  <div class="container-nav">
+   <!-- <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>-->
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+
+        <li><a href="{% url 'events' %}">Aktualności</a></li>
+
+        <li><a href="{% url 'program' %}">Program</a></li>
+
+        <li><a href="{% url 'signup' %}">Zapisy</a></li>
+
+        <li><a href="/#organizers">Organizatorzy</a></li>
+
+        <li><a href="/#organizers">Partnerzy</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+
+{% block content %}
+{% endblock %}
+</body>
+
+</html>

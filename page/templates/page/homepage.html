@@ -1,0 +1,56 @@
+{% extends 'page/base.html' %}
+
+{% block content %}
+
+<div id="about" class="with_bground">
+<div class="overlay">
+<div class="container">
+<div style="text-align: center;">
+<h1 class="header">Wrzawa</h1>
+<h2 class="header">Pierwszy warszawski zlot wędrowników. 12.34.2016 </h2>
+</div>
+</div>
+</div>
+</div>
+
+<div id="events" class="container without_bground">
+<div>
+<h2>{{ latest.title }}</h2>
+<p>Opublikowano: {{ latest.published_date }}</p>
+<p>{{ latest.text|linebreaks }}</p>
+<br>
+<p>Autor: {{ latest.author }}</p>
+<a class="btn btn-default" href="{% url 'events' %}" role="button">Czytaj więcej</a>
+</div>
+</div>
+
+<div id="program" class="container without_bground">
+<div>
+<h2>Program</h2>
+<p>Opis programu: będzie super, wiele różnych tematów, od harcerskich po hydrauliczne. Różnorodność, rozwój, trolololo.</p>
+<a class="btn btn-default" href="#" role="button">Czytaj więcej</a>
+</div>
+</div>
+
+<div id="signup" class="with_bground">
+<div class="overlay">
+<div class="container">
+<div style="text-align: left;">
+<h2 style="color:#ffffff;">Zapisy</h2>
+<p style="color:#ffffff;">Mamy super nowoczesny system zapisów który automatycznie mierzy szczęście</p>
+<a class="btn btn-default" href="{% url 'signup' %}" role="button">Zapisz się</a>
+</div>
+</div>
+</div>
+</div>
+
+<div id="organizers" class="container without_bground">
+<div>
+<h2>Organizatorzy</h2>
+<p>Czyli my. Jesteśmy super, uszanowanko.</p>
+</div>
+</div>
+
+
+{% endblock %}
+
