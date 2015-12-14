@@ -50,21 +50,26 @@ div.title {
 
 #events_header {
   background: url("../photos/hands-people-woman-working.jpg") 50% 0 no-repeat fixed;
+  background-size: cover;
   background-position: 90%;
 }
 
 #program_header {
   background: url("../photos/italian-landscape-mountains-nature.jpg") 50% 0 no-repeat fixed;
+  background-size: cover;
   background-position: 90%;   
+
 }
 
 #signup_header {
   background: url("../photos/nature-person-red-woman.jpg") 50% 0 no-repeat fixed;
+  background-size: cover;
   background-position: 90%;   
 }
 
 #signup {
   background: url("../photos/landscape-nature-clouds-cloudy.jpg") 50% 0 no-repeat fixed;
+  background-size: cover;
   background-position: center;
 }
 
