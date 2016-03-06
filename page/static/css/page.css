@@ -5,9 +5,10 @@ body {
 
 h1.header {
     color: #ffffff;
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Berkshire Swash', cursive;*/
     text-align: center;
-    font-size: 9.0em;
+    font-size: 100;
 }
 
 h2.header {
@@ -83,7 +84,7 @@ body p {
 body {
   font-family: 'Lato', sans-serif;
   color: #4a4a4a;
-  font-size: 100%;
+  font-size: 150%;
   line-height: 150%;
   height: 100%;
   font-weight: 300;
@@ -94,7 +95,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Berkshire Swash', cursive;
+  /*font-family: 'Berkshire Swash', cursive;*/
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #4a4a4a;
 }
