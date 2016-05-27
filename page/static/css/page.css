@@ -3,6 +3,11 @@ body {
     font-size: 100%;
 }*/
 
+.container-fluid {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
 h1.header {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
@@ -30,7 +35,7 @@ div.title {
 }
 
 .with_bground {
-  background: url("../photos/people-woman-coffee-meeting.jpg") 50% 0 no-repeat fixed;
+  background: url("../photos/harcerze.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
   height: auto;
   color: #fff;
@@ -58,14 +63,14 @@ div.title {
 #program_header {
   background: url("../photos/italian-landscape-mountains-nature.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
-  background-position: 90%;   
+  background-position: 90%;
 
 }
 
 #signup_header {
   background: url("../photos/nature-person-red-woman.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
-  background-position: 90%;   
+  background-position: 90%;
 }
 
 #signup {
@@ -115,11 +120,15 @@ h5 a {
 }
 a,
 a:hover {
-  color: #ff9400;
+  color: #f9b12f;
+  text-shadow: none !important;
 }
 
+.transparent {
+    background: 0;
+}
 .navbar-default {
-  background: #FCA205;
+  /*background-color: rgba(255, 255, 255, 1);*/
   border: 0px;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
@@ -127,9 +136,12 @@ a:hover {
   color: #ffffff;
   margin-bottom: 0px;
   border-radius: 0;
+  position: absolute;
+  width:inherit;
 
 }
 
-ul.navbar-nav {
-  color: #ffffff;
+ul.navbar-nav, li.navbar-nav, a.navbar-nav, .navbar-nav{
+  color: #ffffff !important;
+  text-shadow: none !important;
 }
