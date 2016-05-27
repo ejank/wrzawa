@@ -35,7 +35,7 @@ div.title {
 }
 
 .with_bground {
-  background: url("../photos/harcerze.jpg") 50% 0 no-repeat fixed;
+  background: url("../photos/harcerze_small.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
   height: auto;
   color: #fff;
