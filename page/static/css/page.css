@@ -2,6 +2,21 @@
 body {
     font-size: 100%;
 }*/
+:root {
+  --header-font: 'Open Sans', sans-serif;
+  --h-color: rgb(184, 184, 184);
+  --text-color: rgb(184, 184, 184);
+  --button-color: #B27213;
+
+  /*--orange: #f9b12f;
+  --grey: #4a4a4a;
+  --white: #ffffff;
+    font-family: 'Berkshire Swash', cursive;*/
+}
+
+.round{
+  border-radius: 50%;
+}
 
 .container-fluid {
   padding-right: 0px !important;
@@ -10,15 +25,14 @@ body {
 
 h1.header {
     color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    /*font-family: 'Berkshire Swash', cursive;*/
+    font-family: var(--header-font);
     text-align: center;
     font-size: 100;
 }
 
 h2.header {
     color: #ffffff;
-    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
 }
 
 div.header {
@@ -54,6 +68,14 @@ div.title {
   background: rgba(0,0,0,0.6);
 }
 
+.right {
+  float: right;
+}
+
+#idea{
+  padding-top: 90px;
+}
+
 #events_header {
   background: url("../photos/hands-people-woman-working.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
@@ -74,7 +96,7 @@ div.title {
 }
 
 #signup {
-  background: url("../photos/landscape-nature-clouds-cloudy.jpg") 50% 0 no-repeat fixed;
+  background: url("../photos/road.jpg") 50% 0 no-repeat fixed;
   background-size: cover;
   background-position: center;
 }
@@ -84,11 +106,17 @@ body p {
     font-family: 'Lato', sans-serif;
 
 }
+
+
 */
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #4a4a4a;
+  background-color: #021D2B;
+  color: var(--text-color);/*#4a4a4a;*/
+
+
+
   font-size: 150%;
   line-height: 150%;
   height: 100%;
@@ -100,23 +128,20 @@ h3,
 h4,
 h5,
 h6 {
-  /*font-family: 'Berkshire Swash', cursive;*/
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #4a4a4a;
+
+  font-family: var(--header-font);
+  font-weight: lighter;
+  color: var(--h-color);
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
-/*h1 {
-  color: #fff;
-}
-h2 {
-  color: #fff;
-}*/
+
 h3 {
   margin-top: 0;
   margin-bottom: 20px;
 }
 h5 a {
-  font-family: 'Berkshire Swash', cursive;
+  font-family: var(--header-font);
 }
 a,
 a:hover {
@@ -137,11 +162,24 @@ a:hover {
   margin-bottom: 0px;
   border-radius: 0;
   position: absolute;
-  width:inherit;
+  width: -moz-available;
 
 }
 
 ul.navbar-nav, li.navbar-nav, a.navbar-nav, .navbar-nav{
   color: #ffffff !important;
   text-shadow: none !important;
+}
+
+.zhp{
+  width: 10%;
+  float:right;
+}
+
+.btn-default{
+  background-image: none;
+  background-color: var(--button-color);
+  border: 0;
+  border-radius: 0;
+  color: var(--text-color);
 }

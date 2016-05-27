@@ -7,24 +7,47 @@
 <div style="text-align: center;">
 <!--<h1 class="header">WRZAWA</h1>-->
 <div><img src="/static/img/logo_transparent_white.png" alt="WRZAWA"></div>
-<h2 class="header">Zlot wędrowników Chorągwi Stołecznej. <br>Warszawa, 16-18.09.2016 </h2>
+<h2 class="header">Zlot wędrowników Chorągwi Stołecznej ZHP<br>Warszawa, 16-18.09.2016 </h2>
 </div>
 </div>
 </div>
 </div>
 
 <div id="idea" class="container without_bground">
-<div>
+<div class="row">
+  <div class="col-md-8">
 <p>
-W Stołecznej mamy ponad tysiąc wędrowników i to naprawdę dobry powód, aby dać im szansę spotkania
+  <h2>W Stołecznej mamy ponad tysiąc wędrowników</h2>
+To naprawdę dobry powód, aby dać im szansę spotkania
 na wspólnej, przygotowanej specjalnie dla nich imprezie wędrowniczej. "Wrzawa" to pierwsze tego typu
 wydarzenie kierowane do środowisk wędrowniczych naszej chorągwi. Chcemy poprzez ten zlot wywołać
 impuls potrzebny do wybudowania prawdziwej wspólnoty wędrowników, instruktorów i środowisk.</p>
 </div>
+<div class="col-md-4">
+<img src="/static/photos/wawa.jpg" alt="warszawa" class="round img-responsive">
+</div>
+</div>
 </div>
 
+<div id="program" class="container without_bground">
+<div class="row">
+  <div class="col-md-4">
+  <img src="/static/photos/work.jpg" alt="people working" class="round img-responsive">
+  </div>
+<div class="col-md-8">
+<h2>Program</h2>
+<p>Opis programu: będzie super, wiele różnych tematów, od harcerskich po hydrauliczne. Różnorodność, rozwój, trolololo.</p>
+<a class="btn btn-default right" href="{% url 'program' %}" role="button">Czytaj więcej</a>
+</div>
+
+</div>
+</div>
+
+
+
 <div id="events" class="container without_bground">
-<div>
+<div class="row">
+<div class="col-md-6">
 <h2>{{ latest.title }}</h2>
 <p>Opublikowano: {{ latest.published_date }}</p>
 <p>{{ latest.text|linebreaks }}</p>
@@ -32,15 +55,21 @@ impuls potrzebny do wybudowania prawdziwej wspólnoty wędrowników, instruktor�
 <p>Autor: {{ latest.author }}</p>
 <a class="btn btn-default" href="{% url 'events' %}" role="button">Czytaj więcej</a>
 </div>
+<!--
+<div class="col-md-4">
+<img src="/static/photos/trekker.jpg" alt="girl walking" class="round img-responsive">
+</div>-->
+<div class="col-md-6">
+<h2>{{ last_but_one.title }}</h2>
+<p>Opublikowano: {{ last_but_one.published_date }}</p>
+<p>{{ last_but_one.text|linebreaks }}</p>
+<br>
+<p>Autor: {{ last_but_one.author }}</p>
+<a class="btn btn-default" href="{% url 'events' %}" role="button">Czytaj więcej</a>
+</div>
+</div>
 </div>
 
-<div id="program" class="container without_bground">
-<div>
-<h2>Program</h2>
-<p>Opis programu: będzie super, wiele różnych tematów, od harcerskich po hydrauliczne. Różnorodność, rozwój, trolololo.</p>
-<a class="btn btn-default" href="{% url 'program' %}" role="button">Czytaj więcej</a>
-</div>
-</div>
 
 <div id="signup" class="with_bground">
 <div class="overlay">
