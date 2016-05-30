@@ -16,3 +16,6 @@ def program(request):
 
 def signup(request):
     return render(request, 'page/signup.html', {})
+
+def organizers(request):
+    return render(request, 'page/organizers.html', {})

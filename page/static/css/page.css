@@ -101,6 +101,17 @@ div.title {
   background-position: center;
 }
 
+#org_header {
+  background: url("../photos/organizatorzy.jpg") 50% 0 no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#program_image{
+    background: url("../photos/tools.jpg") 50% 0 no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+}
 /*
 body p {
     font-family: 'Lato', sans-serif;
@@ -183,3 +194,7 @@ ul.navbar-nav, li.navbar-nav, a.navbar-nav, .navbar-nav{
   border-radius: 0;
   color: var(--text-color);
 }
+
+.table th, .table td {
+     border-top: none !important;
+ }

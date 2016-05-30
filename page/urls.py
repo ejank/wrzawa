@@ -7,4 +7,6 @@ urlpatterns = [
     url(r'^events/$', views.events, name="events"),
     url(r'^program/$', views.program, name="program"),
     url(r'^signup/$', views.signup, name="signup"),
+    url(r'^organizers/$', views.organizers, name="organizers"),
+    
 ]

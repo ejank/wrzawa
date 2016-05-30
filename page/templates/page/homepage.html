@@ -36,7 +36,25 @@ impuls potrzebny do wybudowania prawdziwej wspólnoty wędrowników, instruktor�
   </div>
 <div class="col-md-8">
 <h2>Program</h2>
-<p>Opis programu: będzie super, wiele różnych tematów, od harcerskich po hydrauliczne. Różnorodność, rozwój, trolololo.</p>
+<p>
+Nad programem Wrzawy pracuje zespół instruktorów-specjalistów, którzy... po prostu wiedzą, jak
+wspaniale spędzać czas i taki czas potrafią zorganizować innym! Niejednego zęba wybili podczas
+szalonych harcerskich imprez (głównie sobie ;)).
+</p>
+<div class="row">
+  <div class="col-md-6">
+<ul style="list-style-type:none">
+<li>phm Krzysztof Widłak</li>
+<li>phm Krzysztof Szczepaniak</li>
+<li>phm Andrzej Skwarczyński</li>
+<li>phm Michał Ochremiak</li></ul></div>
+  <div class="col-md-6">
+    <ul style="list-style-type:none">
+<li>phm Małgorzata Szwed</li>
+<li>phm Iga Wymysłowska</li>
+<li>pwd Maciej Stański</li>
+<li>Joanna Sosnowska</li></ul></div>
+</div>
 <a class="btn btn-default right" href="{% url 'program' %}" role="button">Czytaj więcej</a>
 </div>
 
@@ -76,7 +94,7 @@ impuls potrzebny do wybudowania prawdziwej wspólnoty wędrowników, instruktor�
 <div class="container">
 <div style="text-align: left;">
 <h2 style="color:#ffffff;">Zapisy</h2>
-<p style="color:#ffffff;">Mamy super nowoczesny system zapisów który automatycznie mierzy szczęście</p>
+<p style="color:#ffffff;">Zapisy ruszają już 6 czerwca!</p>
 <a class="btn btn-default" href="{% url 'signup' %}" role="button">Zapisz się</a>
 </div>
 </div>
@@ -84,11 +102,47 @@ impuls potrzebny do wybudowania prawdziwej wspólnoty wędrowników, instruktor�
 </div>
 
 <div id="organizers" class="container without_bground">
-<div>
+<div class="row">
+  <div class="col-md-6">
 <h2>Organizatorzy</h2>
-<p>Komendant zlotu: hm Sonia Jaworska<br><br>
-Kontakt: komendant.wrzawa@stoleczna.zhp.pl</p>
+<p>Komendant zlotu: hm Sonia Jaworska<br>
+komendant.wrzawa@stoleczna.zhp.pl<br>
+Chcesz przeczytać więcej o organizatorach?</p>
+<a class="btn btn-default" href="{% url 'organizers' %}" role="button">Poznaj nas!</a>
+</div>
+<div class="col-md-6">
+  <h2>Nasi partnerzy</h2>
+  <p>Dziękujemy Chorągwi Stołecznej ZHP i Szczepowi 321 WDHiGZ "Infinitas"!</p></br></br>
+  <div class="row">
+  <div class="col-md-6">
+  <a href="http://www.stoleczna.zhp.pl" target="_blank">
+    <img src="/static/img/chorogiew.png" class="img-responsive"></a>
+  </div>
+  <div class="col-md-6">
+      <a href="http://321infinitas.weebly.com/" target="_blank">
+        <img src="/static/img/infinitas.jpg" class="img-responsive"></a>
+  </div>
+  </div>
+</div>
 </div>
 </div>
 
+<!--
+<div id="partners" class="container without_bground">
+<div>
+<h2>Nasi partnerzy</h2>
+<p>Dziękujemy Chorągwi Stołecznej ZHP i Szczepowi 321 WDHiGZ "Infinitas"!<br>
+<div class="row">
+<div class="col-md-3">
+<a href="http://www.stoleczna.zhp.pl" target="_blank">
+  <img src="/static/img/chorogiew.png" class="img-responsive"></a>
+</div>
+<div class="col-md-3">
+    <a href="http://321infinitas.weebly.com/" target="_blank">
+      <img src="/static/img/infinitas.jpg" class="img-responsive"></a>
+</div>
+</div>
+</div>
+</div>
+-->
 {% endblock %}
