@@ -173,13 +173,14 @@ a:hover {
   margin-bottom: 0px;
   border-radius: 0;
   position: absolute;
-  width: -moz-available;
+  width: 100%;
 
 }
 
 ul.navbar-nav, li.navbar-nav, a.navbar-nav, .navbar-nav{
   color: #ffffff !important;
   text-shadow: none !important;
+  /*width: inherit;*/
 }
 
 .zhp{
