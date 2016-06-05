@@ -196,6 +196,10 @@ ul.navbar-nav, li.navbar-nav, a.navbar-nav, .navbar-nav{
   color: var(--text-color);
 }
 
+a.btn-default:hover{
+  background: #189BFF;
+}
+
 .table th, .table td {
      border-top: none !important;
  }
